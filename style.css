@@ -73,6 +73,7 @@ footer {
   width: 100%;
   max-width: 900px;
   min-width: 300px;
+  height: min-content;
   margin: 10px;
   padding: 10px;
   color: #58585a;
