@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ROCA Store</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/e1707d85ec.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/favicon.ico" />
+</head>
+
+<body>
+  <header>
+    <div id="header-title">
+      <div id="logo-wrapper">
+        <a href="index.html"><img src="images/roca_logo.png" id="header-logo" alt="ROCA" height="80" /></a>
+        <h1 id="logo-cap">STORE</h1>
+      </div>
+      <div id="banner">INTERIOR DESIGN</div>
+    </div>
+    <div id="nav-wrapper">
+      <nav>
+        <div id="menu-button"><i class="fas fa-bars"></i></div>
+        <div id="nav-menu">
+          <ul>
+            <li><a href="#all" id="menu-all" class="selected">All Products</a></li>
+            <li><a href="#wallpapers" id="menu-wallpapers">Wallpapers</a></li>
+            <li><a href="#floors" id="menu-floors">Floor Coverings</a></li>
+            <li><a href="#counters" id="menu-counters">Counter Tops</a></li>
+            <li><a href="contact.html" id="menu-contact">Contact us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main></main>
+  <footer>
+    <div id="social-networks-wrapper">
+      <a href="http://www.instagram.com/rocaarq" target="_blank">
+        <i class="fab fa-instagram"></i><span class="social-label"> ROCAarq</span>
+      </a>
+      <span class="social-separator"> | </span>
+      <a href="https://www.facebook.com/profile.php?id=100003004484884" target="_blank">
+        <i class="fab fa-facebook-square"></i><span class="social-label"> ROCA Architecture</span>
+      </a>
+      <span class="social-separator"> | </span>
+      <a href="https://twitter.com/RocaArq" target="_blank">
+        <i class="fab fa-twitter"></i><span class="social-label"> @RocaArq</span>
+      </a>
+    </div>
+    <div id="subscribe-email-wrapper">
+      <form name="subscribe-email-form" id="subscribe-email-form" action="https://formspree.io/mvowyzoo" method="POST">
+        Subscribe for newsletter and offers:<br>
+        <input type="email" name="email" id="email-subscribe" placeholder="user@domain.com" autocomplete="email"
+          class="input-text" minlength="6" required><input type="submit" class="form-button" name="submit"
+          id="email-submit" value="Subscribe">
+      </form>
+    </div>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="store.js"></script>
+</body>
+
+</html>

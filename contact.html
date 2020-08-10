@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ROCA Store</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/e1707d85ec.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/favicon.ico" />
+</head>
+
+<body>
+  <header>
+    <div id="header-title">
+      <div id="logo-wrapper">
+        <a href="index.html"><img src="images/roca_logo.png" id="header-logo" alt="ROCA" height="80" /></a>
+        <h1 id="logo-cap">STORE</h1>
+      </div>
+      <div id="banner">INTERIOR DESIGN</div>
+    </div>
+    <div id="nav-wrapper">
+      <nav>
+        <div id="menu-button"><i class="fas fa-bars"></i></div>
+        <div id="nav-menu">
+          <ul>
+            <li><a href="index.html" id="menu-all">All Products</a></li>
+            <li><a href="index.html#wallpapers" id="menu-wallpapers">Wallpapers</a></li>
+            <li><a href="index.html#floors" id="menu-floors">Floor Coverings</a></li>
+            <li><a href="index.html#counters" id="menu-counters">Counter Tops</a></li>
+            <li><a href="#" id="menu-contact" class="selected">Contact us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div id="contact-form-wrapper" class="content">
+      <form name="contact-form" id="contact-form" action="https://httpbin.org/post" method="POST">
+        <h2 class="spaced">Please provide your contact information and details of your motive</h2>
+        <div class="flex col spaced">
+          <label for="contact-name" class="required">Name: </label>
+          <input type="text" name="contact-name" id="contact-name" class="input-text" tabindex="1" autocomplete="name"
+            required>
+        </div>
+        <div class="flex col spaced">
+          <label for="contact-email" class="required">Email Address: </label>
+          <input type="email" name="contact-email" id="contact-email" class="input-text" tabindex="2"
+            placeholder="user@domain.com" autocomplete="email" required>
+        </div>
+        <div class="flex col spaced">
+          <label for="contact-address" class="required">Address: </label>
+          <input type="text" name="contact-address" id="contact-address" class="input-text" tabindex="3"
+            placeholder="Street name, number, Apt/Suite,..." autocomplete="address-line1" required>
+        </div>
+        <div class="flex row">
+          <div class="flex col stretch spaced">
+            <label for="contact-city" class="required">City: </label>
+            <input type="text" name="contact-city" id="contact-city" class="input-text" tabindex="4" list="cities"
+              required>
+            <datalist id="cities">
+              <option value="Toronto"></option>
+              <option value="Ottawa"></option>
+              <option value="Montreal"></option>
+              <option value="Quebec"></option>
+              <option value="Vancouver"></option>
+              <option value="Calgary"></option>
+              <option value="Edmonton"></option>
+              <option value="Mississauga"></option>
+              <option value="Winnipeg"></option>
+              <option value="Brampton"></option>
+              <option value="Halifax"></option>
+              <option value="Saskatoon"></option>
+              <option value="Kitchener"></option>
+            </datalist>
+          </div>
+          <div class="flex col stretch spaced">
+            <label for="contact-postal" class="required">Postal Code: </label>
+            <input type="text" name="contact-postal" id="contact-postal" class="input-text" tabindex="5"
+              pattern="^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$" placeholder="A1A 2B2" autocomplete="postal-code" required>
+          </div>
+        </div>
+        <div class="flex col">
+          <div class="flex row spaced">
+            <div class="stretch">
+              <label for="contact-about">Contacting about: </label>
+            </div>
+            <div class="stretch">
+              <input type="radio" name="contact-about" id="about-question" value="question" tabindex="6">
+              <label for="about-question">Question</label>
+            </div>
+            <div class="stretch">
+              <input type="radio" name="contact-about" id="about-comment" value="comment" tabindex="7">
+              <label for="about-comment">Comment</label>
+            </div>
+            <div class="stretch">
+              <input type="radio" name="contact-about" id="about-problem" value="problem" tabindex="8">
+              <label for="about-problem">Order Problem</label>
+            </div>
+          </div>
+          <div id="order-num-wrapper" class="flex row spaced stretch">
+            <label for="contact-order-num" class="inline-label">Order number: </label>
+            <input type="text" name="contact-order-num" id="contact-order-num" class="input-text stretch">
+          </div>
+        </div>
+        <div class="flex col spaced">
+          <label for="contact-message" class="required">Please write in detail what you want to contact us about:
+          </label>
+          <textarea name="contact-message" id="contact-message" class="input-text t-area" minlength="10" tabindex="9"
+            required></textarea>
+        </div>
+        <input type="hidden" name="student-name" id="student-name" value="Rony Boscan">
+        <div class="flex row flexcenter spaced">
+          <input type="reset" class="form-button spaced" name="contact-reset" id="contact-reset" tabindex="10"
+            value="Clear">
+          <input type="submit" class="form-button spaced" name="contact-submit" id="contact-submit" tabindex="11"
+            value="Submit">
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <div id="social-networks-wrapper">
+      <a href="http://www.instagram.com/rocaarq" target="_blank">
+        <i class="fab fa-instagram"></i><span class="social-label"> ROCAarq</span>
+      </a>
+      <span class="social-separator"> | </span>
+      <a href="https://www.facebook.com/profile.php?id=100003004484884" target="_blank">
+        <i class="fab fa-facebook-square"></i><span class="social-label"> ROCA Architecture</span>
+      </a>
+      <span class="social-separator"> | </span>
+      <a href="https://twitter.com/RocaArq" target="_blank">
+        <i class="fab fa-twitter"></i><span class="social-label"> @RocaArq</span>
+      </a>
+    </div>
+    <div id="subscribe-email-wrapper">
+      <form name="subscribe-email-form" id="subscribe-email-form" action="https://formspree.io/mvowyzoo" method="POST">
+        Subscribe for newsletter and offers:<br>
+        <input type="email" name="email" id="email-subscribe" placeholder="user@domain.com" autocomplete="email"
+          class="input-text" minlength="6" required><input type="submit" class="form-button" name="submit"
+          id="email-submit" value="Subscribe">
+      </form>
+    </div>
+  </footer>
+
+  <script src="contact.js"></script>
+</body>
+
+</html>
