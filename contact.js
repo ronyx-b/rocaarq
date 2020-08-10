@@ -3,6 +3,7 @@ window.onload = function () {
     // eslint-disable-next-line eqeqeq
     if (document.querySelector('#about-problem').checked == true) {
       document.querySelector('#order-num-wrapper').style.display = 'flex';
+      document.querySelector('#contact-order-num').focus();
     } else {
       document.querySelector('#order-num-wrapper').style.display = 'none';
     }

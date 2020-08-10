@@ -11,7 +11,7 @@ window.addEventListener('load', function () {
       card.appendChild(img);
       let content = document.createElement('p');
       content.innerHTML = `<h2>${product.name}</h2>`;
-      content.innerHTML += `<b>${product.price}$</b> a unit of ${product.unit}/${product.area}`;
+      content.innerHTML += `<b>$${product.price}</b> a unit of ${product.unit}/${product.area}`;
       content.innerHTML += `<br>${product.category} | ${product.description}`;
       card.appendChild(content);
       return card;

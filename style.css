@@ -46,6 +46,7 @@ header {
 }
 
 main {
+  min-height: 100vh;
   padding: 10px 20px;
   display: flex;
   flex-wrap: wrap;
